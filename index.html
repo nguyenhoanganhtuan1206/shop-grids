@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopGrids</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- Library -->
+    <link rel="stylesheet" href="assets/library/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/library/js/bootstrap.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/icon/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header__topbar-container">
+            <div class="container h-100 d-flex align-center justify-content-between">
+                <div class="header__topbar">
+                    <ul class="header__topbar-currency">
+                        <li class="header__topbar-currency-item">
+                            <span>$ USD
+                                <i class="ti-angle-down"></i>
+                            </span>
+                            <ul class="header__topbar-currency-sub">
+                                <li class="hover--with-primary-color">$ EURO</li>
+                                <li class="hover--with-primary-color">$ VND</li>
+                                <li class="hover--with-primary-color">$ CAD</li>
+                                <li class="hover--with-primary-color">¥ CNY</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="header__topbar-language">
+                        <li class="header__topbar-language-item">
+                            <span>English
+                                <i class="ti-angle-down"></i>
+                            </span>
+                            <ul class="header__topbar-language-sub">
+                                <li class="hover--with-primary-color">Vietnamese</li>
+                                <li class="hover--with-primary-color">France</li>
+                                <li class="hover--with-primary-color">Japanese</li>
+                                <li class="hover--with-primary-color">Russia</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__menu-topbar d-flex--with-align-items-justify-center-l">
+                    <ul class="header__menu-topbar-list d-flex--with-align-items-l">
+                        <li>
+                            <a href="">Home
+                                <div class="header__menu--when-hover"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">About Us
+                                <div class="header__menu--when-hover"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">Contact Us
+                                <div class="header__menu--when-hover"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__menu-topbar-user">
+                    <ul class="header__menu-topbar-user-list d-flex--with-align-items-justify-center-l h-100">
+                        <li>
+                            <a href="" class="d-flex--with-align-items-justify-center-l">
+                                <img src="assets/img/header/avatar.jpg" alt="" class="user-avatar">
+
+                                <span class="user_name">Anh Tuấn</span>
+                            </a>
+                        </li>
+
+                        <li class="position-relative">
+                            <a href="" class="d-flex--with-align-items-justify-center-l">
+                                Sign in
+                                <div class="header__menu--when-hover"></div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="d-flex--with-align-items-justify-center-l">
+                                Register
+                                <div class="header__menu--when-hover"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="container">
+                <div class="row-grid">
+                    <div class="header__middle-logo col-grid l-grid-3">
+                        <img src="assets/img/header/logo.svg" alt="">
+                    </div>
+    
+                    <div class="header__middle-navbar-search l-grid-5 d-flex--with-align-items-l">
+                        <ul class="header__middle-navbar-select h-100">
+                            <li class="header__middle-navbar-option d-flex--with-align-items-justify-center-l">
+                                <span>All</span>
+                                <i class="ti-angle-down"></i>
+                                <ul class="header__middle-navbar-select-sub">
+                                    <li class="header__middle-navbar-option">Price : High to Low</li>
+                                    <li class="header__middle-navbar-option">Price : Low to High</li>
+                                    <li class="header__middle-navbar-option">Top Sales</li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        <input type="text" name="search" placeholder="Search" class="header__middle-navbar-input">
+    
+                        <button type="submit" class="header__middle-navbar-search-btn button">
+                            <i class="ti-search"></i>
+                        </button>
+                    </div>
+    
+                    <div class="header__middle-right-area col-grid l-grid-4 d-flex--with-align-items-justify-between-l">
+                        <div class="header__middle-right-area-contact d-flex--with-align-items-justify-center-l">
+                            <i class="fas fa-phone hover--with-primary-color d-flex--with-align-items-justify-center-l"></i>
+                            <div class="nav-hotline">
+                                <h3>Hotline: </h3>
+                                <span>(+100) 123 456 7890</span>
+                            </div>
+                        </div>
+    
+                        <div class="header__middle-right-area-service d-flex--with-align-items-justify-center-l">
+                            <div class="header__middle-right-area-service-wrap position-relative d-flex--with-align-items-justify-center-l hover--with-primary-color">
+                                <i class="ti-heart"></i>
+                                <span class="quantity d-flex--with-align-items-justify-center-l">0</span>
+                            </div>
+    
+                            <div class="header__middle-right-area-service-wrap position-relative d-flex--with-align-items-justify-center-l hover--with-primary-color">
+                                <i class="ti-shopping-cart"></i>
+                                <span class="quantity d-flex--with-align-items-justify-center-l">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

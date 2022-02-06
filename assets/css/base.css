@@ -1,0 +1,152 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #0267f3;
+    --red-color: #f73232;
+    --background-color: #081828;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* Style Common */
+.button {
+    color: var(--white-color);
+    text-decoration: none;
+    outline: none;
+    background-color: var(--primary-color);
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.heading::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.hover--with-primary-color:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* Mobile */
+.d-flex--with-align-items-c {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex--with-align-items-justify-center-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex--with-align-items-justify-between-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .d-flex--with-align-items-m {
+        display: flex;
+        align-items: center;
+    }
+
+    .d-flex--with-align-items-justify-center-m {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .d-flex--with-align-items-justify-between-m {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .d-flex--with-align-items-l {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .d-flex--with-align-items-justify-center-l {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .d-flex--with-align-items-justify-between-l {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.text {
+    font-size: 1.4rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(--growthFrom);
+    }
+
+    to {
+        transform: scale(--growthTo);
+    }
+}
