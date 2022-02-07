@@ -108,6 +108,10 @@ a:hover {
 
 /* PC medium resolution > */
 @media (min-width: 1113px) {
+    .d-flex--no-align-items-l {
+        display: flex;
+    }
+
     .d-flex--with-align-items-l {
         display: flex !important;
         align-items: center;

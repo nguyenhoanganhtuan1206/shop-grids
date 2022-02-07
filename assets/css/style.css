@@ -250,3 +250,135 @@
     right: -8px;
     font-size: 1.2rem;
 }
+
+.header__middle-right-area-service--have-cart:hover 
+.header__middle-service--have-cart {
+    display: block;
+}
+
+.header__middle-service--have-cart {
+    --growthTo: 0;
+    --growthFrom: 1;
+    position: absolute;
+    top: 175%;
+    right: 0;
+    background-color: var(--white-color);
+    width: 300px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 14%);
+    padding: 20px 25px;
+    transform-origin: right;
+    animation: fadeIn 0.4s;
+    transition: all 0.3s;
+    display: none;
+    z-index: 11;
+}
+
+.header__middle-service--have-cart::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 23px;
+    top: -26px;
+    left: 0;
+    cursor: pointer;
+}
+
+.header__middle-service--have-cart .head {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.header__middle-service--have-cart .head a
+,.header__middle-service--have-cart .head .quantity--have-cart {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #222;
+    transition: all 0.3s;
+    cursor: text;
+}
+
+.header__middle-service--have-cart .head a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.shopping-item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.shopping-item__img-wrap {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    display: block;
+    margin-right: 25px;
+}
+
+.shopping-item__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shopping-item .info {
+    width: 60%;
+    padding-right: 25px;
+}
+
+.shopping-item .info h3 {
+    margin-bottom: 9px;
+}
+
+.shopping-item .info h3 a {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #081828;
+    transition: all 0.3s;
+}
+
+.shopping-item .info h3 a:hover {
+    color: var(--primary-color);
+}
+
+.shopping-item .info span {
+    font-size: 1.5rem;
+    color: #081828;
+    opacity: 0.7;
+}
+
+.shopping-item i {
+    font-size: 1.1rem;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+}
+
+.header__middle-service--have-cart .footer .total-price {
+    font-size: 1.5rem;
+    color: #081828;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footer__btn {
+    padding: 13px 30px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.footer__btn:hover {
+    background-color: #081828;
+    color: var(--white-color);
+}
