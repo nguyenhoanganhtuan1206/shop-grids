@@ -62,10 +62,16 @@ a:hover {
 }
 
 .hover--with-primary-color:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
     transition: all 0.3s;
     cursor: pointer;
+}
+
+.d-flex--with-align-items-justify-between-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Mobile */
