@@ -711,3 +711,130 @@
     right: -4px;
 }
 
+/* Trending Product */
+.trending-product {
+    background-color:#f9f9f9;
+}
+
+.trending-product__item {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 0 20px #00000012;
+    padding: 8px;
+    margin-top: 24px;
+}
+
+.trending-product__item-img-wrap {
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+
+.trending-product__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trending-product__item-body {
+    padding: 20px;
+}
+
+.trending-product__item-body .type {
+    color: #888;
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+}
+
+.trending-product__item-body .rate i {
+    font-size: 1.5rem;
+    color: #fecb00;
+    margin: 8px 0 16px 0;
+}
+
+.trending-product__item-body .rate span {
+    margin-left: 4px;
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.trending-product__item-body .name a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #081828;
+    transition: all 0.3s;
+}
+
+.trending-product__item-body .name a:hover {
+    color: var(--primary-color);
+}
+
+.trending-product__item-body .price {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.trending-product__item-body .discount-price {
+    color: #aaa;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: line-through;
+}
+
+.trending-product__item-img-wrap:hover .trending-product__item-btn-cart {
+    top: 85%;
+}
+
+.trending-product__item-btn-cart {
+    --growthFrom: 0;
+    --growthTo: 1;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.trending-product__item-btn-cart a {
+    --growthFrom: 0;
+    --growthTo: 1;
+    padding: 12px 20px;
+    width: 140px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color: rgba(0,103,243,1);
+    animation: fadeIn 0.4s , growth 0.4s;
+    transition: all 0.3s;
+}
+
+.trending-product__item-btn-cart a:hover {
+    background-color: #081828;
+    color: var(--white-color);
+}
+
+.trending-product__item-btn-cart a i {
+    margin-right: 8px;
+}
+
+.trending-product__item-img-wrap .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.trending-product__item-img-wrap .label .sale {
+    background-color:#f73232;
+    padding: 5px 10px;
+}
+
+.trending-product__item-img-wrap .label .release {
+    background-color: #0167f3;
+    padding: 5px 10px;
+}
