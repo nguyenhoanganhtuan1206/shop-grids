@@ -79,6 +79,11 @@ a:hover {
     cursor: pointer;
 }
 
+.hover--with-black-color:hover {
+    background-color: #081828;
+    color: var(--white-color);
+}
+
 .d-flex--with-align-items-justify-between-all {
     display: flex;
     align-items: center;
