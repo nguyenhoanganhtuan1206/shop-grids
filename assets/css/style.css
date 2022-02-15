@@ -1062,6 +1062,7 @@
 .nav-classification-products__list .active {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+    display: block !important;
 }
 
 .classification-products__item {
@@ -1175,4 +1176,8 @@
     color: var(--white-color);
     padding: 2px 8px;
     font-weight: 600;
+}
+
+.non-active {
+    display: none !important;
 }

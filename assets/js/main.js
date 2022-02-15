@@ -25,3 +25,43 @@ var x = setInterval(function () {
     // }
 });
 
+
+/* Classification */
+const navBestSeller = document.querySelector('.js-nav-best-sellers');
+const bestSeller = document.querySelector('.js-best-seller');
+
+const navNewArrival = document.querySelector('.js-nav-new-arrival');
+const newArrival = document.querySelector('.js-new-arrival');
+
+const navTopRated = document.querySelector('.js-nav-top-rate');
+const topRated = document.querySelector('.js-top-rate');
+
+navBestSeller.addEventListener('click' , function() {
+    navBestSeller.classList.add('active');
+    bestSeller.classList.remove('non-active');
+    newArrival.classList.add('non-active');
+    navNewArrival.classList.remove('active');
+    topRated.classList.add('non-active');
+    navTopRated.classList.remove('active');
+});
+
+navNewArrival.addEventListener('click' , function() {
+    navNewArrival.classList.add('active');
+    newArrival.classList.remove('non-active');
+    bestSeller.classList.add('non-active');
+    navBestSeller.classList.remove('active');
+    topRated.classList.add('non-active');
+    navTopRated.classList.remove('active');
+});
+
+navTopRated.addEventListener('click' , function() {
+    navTopRated.classList.add('active');
+    topRated.classList.remove('non-active');
+    bestSeller.classList.add('non-active');
+    navBestSeller.classList.remove('active');
+    newArrival.classList.add('non-active');
+    navNewArrival.classList.remove('active');
+});
+
+
+
